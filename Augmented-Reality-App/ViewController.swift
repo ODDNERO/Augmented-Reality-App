@@ -31,8 +31,16 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         super.viewWillAppear(animated)
         
         // Create a session configuration
-        let configuration = ARWorldTrackingConfiguration()
-
+        let configuration = ARImageTrackingConfiguration()
+        
+        let imageGroupNames = ["Origin", "Picture", "Real"]
+        
+        for groupName in imageGroupNames {
+            if let imageGroup = ARReferenceImage.referenceImages(inGroupNamed: groupName, bundle: nil) {
+                configuration.trackingImages.formUnion(imageGroup)
+            }
+        }
+        
         // Run the view's session
         sceneView.session.run(configuration)
     }

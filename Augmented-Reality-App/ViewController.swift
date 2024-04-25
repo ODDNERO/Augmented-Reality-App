@@ -2,8 +2,6 @@
 //  ViewController.swift
 //  Augmented-Reality-App
 //
-//  Created by NERO on 4/23/24.
-//
 
 import UIKit
 import SceneKit

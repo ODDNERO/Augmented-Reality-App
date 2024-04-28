@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CEA5ADD22BD7902600B55013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5ADD12BD7902600B55013 /* AppDelegate.swift */; };
-		CEA5ADD42BD7902600B55013 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA5ADD32BD7902600B55013 /* art.scnassets */; };
 		CEA5ADD62BD7902600B55013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5ADD52BD7902600B55013 /* ViewController.swift */; };
 		CEA5ADD92BD7902600B55013 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CEA5ADD82BD7902600B55013 /* Base */; };
 		CEA5ADDB2BD7902800B55013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA5ADDA2BD7902800B55013 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		CEA5ADCE2BD7902600B55013 /* Augmented-Reality-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Augmented-Reality-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA5ADD12BD7902600B55013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEA5ADD32BD7902600B55013 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		CEA5ADD52BD7902600B55013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEA5ADD82BD7902600B55013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA5ADDA2BD7902800B55013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				CEA5ADD12BD7902600B55013 /* AppDelegate.swift */,
-				CEA5ADD32BD7902600B55013 /* art.scnassets */,
 				CEA5ADD52BD7902600B55013 /* ViewController.swift */,
 				CEA5ADD72BD7902600B55013 /* Main.storyboard */,
 				CEA5ADDA2BD7902800B55013 /* Assets.xcassets */,
@@ -123,7 +120,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA5ADD42BD7902600B55013 /* art.scnassets in Resources */,
 				CEA5ADDB2BD7902800B55013 /* Assets.xcassets in Resources */,
 				CEA5ADD92BD7902600B55013 /* Base in Resources */,
 				CEA5ADDE2BD7902800B55013 /* Base in Resources */,

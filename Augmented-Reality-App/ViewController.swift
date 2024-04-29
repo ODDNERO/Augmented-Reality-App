@@ -24,14 +24,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Create a session configuration
         let configuration = ARImageTrackingConfiguration()
         
-        let imageGroupNames = ["Origin", "Picture", "Real"]
-        
-        for groupName in imageGroupNames {
-            if let imageGroup = ARReferenceImage.referenceImages(inGroupNamed: groupName, bundle: nil) {
+        for groupName in AssetDataGroup.allCases {
+            if let imageGroup = ARReferenceImage.referenceImages(inGroupNamed: groupName.description, bundle: nil) {
                 configuration.trackingImages.formUnion(imageGroup)
             }
         }
-        
+    
         // Run the view's session
         sceneView.session.run(configuration)
     }

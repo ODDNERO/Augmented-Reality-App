@@ -8,14 +8,16 @@ import SceneKit
 import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
-
     @IBOutlet var sceneView: ARSCNView!
+    
+    var markerData = Marker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Set the view's delegate
         sceneView.delegate = self
+        loadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,4 +60,19 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         return node
     }
     
+    // json 데이터 로드
+    func loadData() {
+            guard let url = Bundle.main.url(forResource: "Marker", withExtension: "json") else {
+                fatalError("Unable to find JSON on Bundle")
+            }
+            guard let data = try? Data(contentsOf: url) else {
+                fatalError("Unable to load JSON")
+            }
+            let decoder = JSONDecoder()
+            
+            guard let loadedMarkerData = try? decoder.decode([String: AssetsData].self, from: data) else {
+                fatalError("Unable to parse JSON")
+        }
+        markerData = loadedMarkerData
+    }
 }

@@ -10,6 +10,7 @@
 		CE1C2EBF2BDE751800D49105 /* Marker.json in Resources */ = {isa = PBXBuildFile; fileRef = CE1C2EBE2BDE751800D49105 /* Marker.json */; };
 		CE1C2EC52BDF23DC00D49105 /* AssetsDataDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C2EC42BDF23DC00D49105 /* AssetsDataDTO.swift */; };
 		CE3801D72BDF33C9005F1F83 /* AssetDataGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3801D62BDF33C9005F1F83 /* AssetDataGroup.swift */; };
+		CE3801DB2BDFB34C005F1F83 /* SCNNode+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3801DA2BDFB34C005F1F83 /* SCNNode+.swift */; };
 		CEA5ADD22BD7902600B55013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5ADD12BD7902600B55013 /* AppDelegate.swift */; };
 		CEA5ADD62BD7902600B55013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5ADD52BD7902600B55013 /* ViewController.swift */; };
 		CEA5ADD92BD7902600B55013 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CEA5ADD82BD7902600B55013 /* Base */; };
@@ -21,6 +22,7 @@
 		CE1C2EBE2BDE751800D49105 /* Marker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Marker.json; path = Assets.xcassets/Origin.arresourcegroup/Marker.json; sourceTree = "<group>"; };
 		CE1C2EC42BDF23DC00D49105 /* AssetsDataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsDataDTO.swift; sourceTree = "<group>"; };
 		CE3801D62BDF33C9005F1F83 /* AssetDataGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDataGroup.swift; sourceTree = "<group>"; };
+		CE3801DA2BDFB34C005F1F83 /* SCNNode+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNNode+.swift"; sourceTree = "<group>"; };
 		CEA5ADCE2BD7902600B55013 /* Augmented-Reality-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Augmented-Reality-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA5ADD12BD7902600B55013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA5ADD52BD7902600B55013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				CEA5ADD12BD7902600B55013 /* AppDelegate.swift */,
 				CE1C2EC42BDF23DC00D49105 /* AssetsDataDTO.swift */,
 				CEA5ADD52BD7902600B55013 /* ViewController.swift */,
+				CE3801DA2BDFB34C005F1F83 /* SCNNode+.swift */,
 				CE3801D62BDF33C9005F1F83 /* AssetDataGroup.swift */,
 				CEA5ADD72BD7902600B55013 /* Main.storyboard */,
 				CEA5ADDA2BD7902800B55013 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA5ADD62BD7902600B55013 /* ViewController.swift in Sources */,
+				CE3801DB2BDFB34C005F1F83 /* SCNNode+.swift in Sources */,
 				CE1C2EC52BDF23DC00D49105 /* AssetsDataDTO.swift in Sources */,
 				CE3801D72BDF33C9005F1F83 /* AssetDataGroup.swift in Sources */,
 				CEA5ADD22BD7902600B55013 /* AppDelegate.swift in Sources */,

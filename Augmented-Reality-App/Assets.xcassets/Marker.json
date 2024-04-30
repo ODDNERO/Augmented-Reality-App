@@ -1,0 +1,14 @@
+{
+    "오스랩스_Logo" : {
+        "title" : "로고",
+        "description" : "테스트"
+    },
+    "오스랩스_QRCode" : {
+        "title" : "큐알",
+        "description" : "테스트"
+    },
+    "ChatGPT_Text" : {
+        "title" : "텍스트",
+        "description" : "테스트"
+    }
+}

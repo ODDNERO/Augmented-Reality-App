@@ -11,6 +11,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet var sceneView: ARSCNView!
     
     var markerData = Marker()
+    var recognizedMarkers = Set<String>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Create a session configuration
         let configuration = ARImageTrackingConfiguration()
+        configuration.maximumNumberOfTrackedImages = 3
         
         for groupName in AssetDataGroup.allCases {
             if let imageGroup = ARReferenceImage.referenceImages(inGroupNamed: groupName.description, bundle: nil) {
@@ -47,6 +49,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         guard let imageAnchor = anchor as? ARImageAnchor else { return nil }
         guard let markerName = imageAnchor.referenceImage.name else { return nil }
         guard let marker = markerData[markerName] else { return nil }
+        
+        guard !recognizedMarkers.contains(markerName) else {
+            return nil
+        }
         
         // Plane 및 SCNNode 생성
         let plane = SCNPlane(width: imageAnchor.referenceImage.physicalSize.width,
@@ -74,6 +80,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         descriptionNode.position.x += Float(plane.width / 2) + spacing
         descriptionNode.position.y = titleNode.position.y - titleNode.height - spacing
         planeNode.addChildNode(descriptionNode)
+        
+        recognizedMarkers.insert(markerName)
         
         return node
     }
